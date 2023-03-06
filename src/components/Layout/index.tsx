@@ -6,15 +6,20 @@ import { useLocation } from "react-router-dom";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
-  const homePagePath = "/";
+
+  let customclasses = "";
+
+  if (location.pathname !== "/" && location.pathname !== "/contact") {
+    customclasses = classes["main--alt1"];
+  } else if (location.pathname === "/contact") {
+    customclasses = classes["main--alt2"];
+  }
 
   return (
     <>
       <Header />
       <main
-        className={`${classes.main} ${
-          location.pathname !== homePagePath && classes["main--alt"]
-        }`}
+        className={`${classes.main} ${customclasses}`}
       >
         {children}
       </main>

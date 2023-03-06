@@ -7,9 +7,8 @@
   &__article {
     width: 100%;
     padding: 8rem;
-    height: 100vh;
     &:nth-child(1) {
-      margin-top: 1000px;
+      margin-top: 800px;
     }
     &:nth-child(2) {
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
@@ -23,7 +22,7 @@
   }
   &__first-image {
     position: relative;
-    border: 1px solid red;
+    border: 1px solid black;
     width: 400px;
     max-width: 80%;
     height: 300px;
@@ -34,18 +33,18 @@
     bottom: -30%;
     right: 0;
     transform: translateX(50%);
-    border: 1px solid red;
+    border: 1px solid black;
     width: 150px;
     height: 250px;
   }
   &__third-image {
-    border: 1px solid red;
+    border: 1px solid black;
     width: 200px;
     height: 250px;
   }
   &__fourth-image {
     align-self: flex-end;
-    border: 1px solid red;
+    border: 1px solid black;
     width: 150px;
     height: 200px;
   }

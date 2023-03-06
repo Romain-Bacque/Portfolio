@@ -1,0 +1,26 @@
+@use "../../styles/media-queries" as mediaQuery;
+@use "../../styles/vars" as *;
+
+.contact {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  &__form {
+    position: absolute;
+    bottom: 30%;
+    width: 600px;
+    max-width: 90%;
+    font-size: 1.7rem;
+  }
+  &__button {
+    width: 100%;
+    background-color: $dark-gray!important;
+    border-color: $dark-gray!important;
+    margin-top: 15rem;
+    padding: 1rem!important;
+  }
+}
