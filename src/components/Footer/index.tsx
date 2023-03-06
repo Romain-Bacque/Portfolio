@@ -6,23 +6,23 @@ const Footer: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <p className={classes.footer__copy}>
-        © 2022 <span className="bold">Mon Portfolio.</span> Tous droits
+        © 2022 Mon Portfolio. Tous droits
         réservés.
       </p>
       <ul className={classes.footer__link}>
         <li>
           <a href="https://github.com/Romain-Bacque">
-            <Github className="text-white" />
+            <Github className={classes.footer__icon} />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/romain-bacque/">
-            <Linkedin className="text-white" />
+            <Linkedin className={classes.footer__icon} />
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/romain.bacque.7tfj6958j/">
-            <Facebook className="text-white" />
+            <Facebook className={classes.footer__icon} />
           </a>
         </li>
       </ul>

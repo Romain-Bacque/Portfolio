@@ -5,10 +5,17 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./style.module.scss";
+import { useState } from "react";
 
 const expand = "lg";
 
 const NavBar: React.FC = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleSelect = () => {
+    setExpanded(false);
+  };
+
   const getClassName = (path: string) => {
     const baseClasses = `${classes.navbar__link} ${
       window.location.pathname !== "/" && classes["navbar__link--alt"]
@@ -20,12 +27,18 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <Navbar className={`mb-3 ${classes.navbar}`} expand={expand}>
+    <Navbar
+      expanded={expanded}
+      onToggle={() => setExpanded(!expanded)}
+      className={`mb-3 ${classes.navbar}`}
+      expand={expand}
+    >
       <Container fluid>
         <Navbar.Brand className={classes.navbar__brand} href="/">
           Mon Portfolio
         </Navbar.Brand>
         <Navbar.Toggle
+          onClick={() => setExpanded(!expanded)}
           style={{ backgroundColor: "white" }}
           aria-controls={`offcanvasNavbar-expand-${expand}`}
         />
@@ -44,27 +57,34 @@ const NavBar: React.FC = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="gap-4 justify-content-end flex-grow-1 pe-3">
-              <NavLink className={getClassName.bind(null, "/")} to="/">
-                Accueil
-              </NavLink>
-              <NavLink
-                className={getClassName.bind(null, "/about")}
-                to="/about"
-              >
-                A Propos
-              </NavLink>
-              <NavLink
-                className={getClassName.bind(null, "/projects")}
-                to="/projects"
-              >
-                Mes Projets
-              </NavLink>
-              <NavLink
-                className={getClassName.bind(null, "/contact")}
-                to="/contact"
-              >
-                Contact
-              </NavLink>
+                <NavLink
+                  onClick={handleSelect}
+                  className={getClassName.bind(null, "/")}
+                  to="/"
+                >
+                  Accueil
+                </NavLink>
+                <NavLink
+                  onClick={handleSelect}
+                  className={getClassName.bind(null, "/about")}
+                  to="/about"
+                >
+                  A Propos
+                </NavLink>
+                <NavLink
+                  onClick={handleSelect}
+                  className={getClassName.bind(null, "/projects")}
+                  to="/projects"
+                >
+                  Mes Projets
+                </NavLink>
+                <NavLink
+                  onClick={handleSelect}
+                  className={getClassName.bind(null, "/contact")}
+                  to="/contact"
+                >
+                  Contact
+                </NavLink>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

@@ -1,7 +1,6 @@
 @use "../../styles/media-queries" as mediaQuery;
 @use "../../styles/vars" as *;
 
-
 .home {
   display: flex;
   justify-content: space-between;
@@ -11,7 +10,7 @@
   overflow-y: auto;
   &__container {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 0;
     right: 0;
     mix-blend-mode: difference;

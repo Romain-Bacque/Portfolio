@@ -1,19 +1,10 @@
-@mixin media-min($_min-width) {
-  @media screen and (min-width: $_min-width) {
-    & {
-      @content;
-    }
-  }
-}
+@use "../../../styles/media-queries" as mediaQuery;
+@use "../../../styles/vars" as *;
 
 .navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
   &__link {
-    color: gray;
-    border-color: gray;
+    color: $gray;
+    border-color: $gray;
     font-size: 1.7rem;
     width: fit-content;
     text-decoration: none;
@@ -21,20 +12,20 @@
     margin-left: 2rem;
     position: relative;
     transition: none;
-    @include media-min(992px) {
+    @include mediaQuery.media-min($large-screen) {
       color: white;
       border-color: white;
     }
     &.active-link {
       border-bottom: 2px solid;
-      @include media-min(992px) {
+      @include mediaQuery.media-min($large-screen) {
         border-bottom: 2px solid;
       }
     }
-  }
-  &__link--alt {
-    color: gray !important;
-    border-color: gray;
+    &--alt {
+      color: $gray;
+      border-color: $gray;
+    }
   }
   &__brand {
     position: relative;
