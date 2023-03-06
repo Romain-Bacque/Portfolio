@@ -1,13 +1,8 @@
-@mixin media-min($_min-width) {
-  @media screen and (min-width: $_min-width) {
-    & {
-      @content;
-    }
-  }
-}
+@use "../../styles/media-queries" as mediaQuery;
+@use "../../styles/vars" as *;
+
 
 .home {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +24,7 @@
       color: rgb(179, 179, 179);
       font-size: 7rem;
       margin-bottom: 5rem;
-      @include media-min(768px) {
+      @include mediaQuery.media-min($small-screen) {
         margin-bottom: 10rem;
         font-size: 8rem;
       }
@@ -38,24 +33,30 @@
       font-size: 1.5rem;
       width: 80%;
       margin-left: auto;
+      @include mediaQuery.media-min($small-screen) {
+        font-size: 1.8rem;
+      }
     }
     .home__lastname {
       display: block;
       margin-left: 4rem;
-      @include media-min(768px) {
+      @include mediaQuery.media-min($medium-screen) {
         display: inline;
         position: absolute;
         top: 50%;
       }
     }
+  }
+  .home__presentation-container {
+    padding: 0 0 4rem;
+    position: relative;
     .home__project-button {
       position: absolute;
-      bottom: 2rem;
+      bottom: 0;
       right: 0;
       color: gray;
       width: max-content;
-      margin-left: auto;
-      margin-top: 2rem;
+      margin-left: 80%;
       font-size: 1.3rem;
       font-weight: bold;
       text-transform: uppercase;

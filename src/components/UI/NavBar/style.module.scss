@@ -1,19 +1,40 @@
+@mixin media-min($_min-width) {
+  @media screen and (min-width: $_min-width) {
+    & {
+      @content;
+    }
+  }
+}
+
 .navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   &__link {
+    color: gray;
+    border-color: gray;
+    font-size: 1.7rem;
+    width: fit-content;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-left: 2rem;
     position: relative;
-    &:before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      width: 0;
-      z-index: 10;
-      border-bottom: 2px solid white;
-      transition: 0.2s linear;
+    transition: none;
+    @include media-min(992px) {
+      color: white;
+      border-color: white;
     }
-    &.active {
-      content: "";
-      width: 100%;
+    &.active-link {
+      border-bottom: 2px solid;
+      @include media-min(992px) {
+        border-bottom: 2px solid;
+      }
     }
+  }
+  &__link--alt {
+    color: gray !important;
+    border-color: gray;
   }
   &__brand {
     position: relative;
@@ -32,15 +53,5 @@
       width: 10rem;
       border-bottom: 3px solid rgb(73, 73, 73);
     }
-  }
-}
-
-a {
-  color: black;
-}
-
-@media screen and (min-width: 992px) {
-  a {
-    color: white;
   }
 }
