@@ -34,8 +34,8 @@ const NavBar: React.FC = () => {
       expand={expand}
     >
       <Container fluid>
-        <Navbar.Brand className={classes.navbar__brand} href="/">
-          Mon Portfolio
+        <Navbar.Brand className={classes.navbar__brand}>
+          <NavLink className={classes["navbar__brand-text"]} to="/">Mon Portfolio</NavLink>
         </Navbar.Brand>
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
@@ -57,34 +57,34 @@ const NavBar: React.FC = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="gap-4 justify-content-end flex-grow-1 pe-3">
-                <NavLink
-                  onClick={handleSelect}
-                  className={getClassName.bind(null, "/")}
-                  to="/"
-                >
-                  Accueil
-                </NavLink>
-                <NavLink
-                  onClick={handleSelect}
-                  className={getClassName.bind(null, "/about")}
-                  to="/about"
-                >
-                  A Propos
-                </NavLink>
-                <NavLink
-                  onClick={handleSelect}
-                  className={getClassName.bind(null, "/projects")}
-                  to="/projects"
-                >
-                  Mes Projets
-                </NavLink>
-                <NavLink
-                  onClick={handleSelect}
-                  className={getClassName.bind(null, "/contact")}
-                  to="/contact"
-                >
-                  Contact
-                </NavLink>
+              <NavLink
+                onClick={handleSelect}
+                className={getClassName.bind(null, "/")}
+                to="/"
+              >
+                Accueil
+              </NavLink>
+              <NavLink
+                onClick={handleSelect}
+                className={getClassName.bind(null, "/about")}
+                to="/about"
+              >
+                A Propos
+              </NavLink>
+              <NavLink
+                onClick={handleSelect}
+                className={getClassName.bind(null, "/projects")}
+                to="/projects"
+              >
+                Mes Projets
+              </NavLink>
+              <NavLink
+                onClick={handleSelect}
+                className={getClassName.bind(null, "/contact")}
+                to="/contact"
+              >
+                Contact
+              </NavLink>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
