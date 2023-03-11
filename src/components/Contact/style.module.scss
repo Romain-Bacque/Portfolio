@@ -16,11 +16,14 @@
     max-width: 90%;
     font-size: 1.7rem;
   }
+  &__textarea {
+    resize: none;
+    margin-bottom: 10rem;
+  }
   &__button {
     width: 100%;
     background-color: $dark-gray!important;
     border-color: $dark-gray!important;
-    margin-top: 15rem;
     padding: 1rem!important;
   }
 }
