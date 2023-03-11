@@ -1,19 +1,27 @@
+@use "../../styles/media-queries" as mediaQuery;
+@use "../../styles/vars" as *;
+
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   &__article {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
     width: 100%;
     padding: 8rem;
     &:nth-child(2) {
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
       position: relative;
-      display: flex;
       flex-direction: column;
       gap: 3rem;
       background-color: rgb(58, 58, 58);
       color: white;
+      & .description-title {
+        &::after {
+          border-color: white;
+        }
+      }
     }
   }
   &__first-image {
@@ -44,7 +52,23 @@
     width: 150px;
     height: 200px;
   }
-  &__description {
+}
+
+.description {
+  width: 60%;
+  &-title {
+    position: relative;
+    margin-bottom: 2rem;
+    &::after {
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+      content: "";
+      width: 50px;
+      border-bottom: 3px solid gray;
+    }
+  }
+  &-text {
     font-size: 1.7rem;
   }
 }

@@ -27,12 +27,15 @@ const About: React.FC = () => {
             />
           </div>
         </div>
-        <p className={classes["about__description"]}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          molestiae et consectetur ipsum. Ipsa commodi modi, ipsum ad fuga est
-          nobis sed, pariatur vero accusantium veniam quibusdam possimus quo
-          laudantium!
-        </p>
+        <div className={classes["description"]}>
+          <h3 className={classes["description-title"]}>Lorem ipsum dolor</h3>
+          <p className={classes["description-text"]}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            molestiae et consectetur ipsum. Ipsa commodi modi, ipsum ad fuga est
+            nobis sed, pariatur vero accusantium veniam quibusdam possimus quo
+            laudantium!
+          </p>
+        </div>
       </article>
       <article className={classes.about__article}>
         <div className={classes["about__third-image"]}>
@@ -42,12 +45,15 @@ const About: React.FC = () => {
             loading="lazy"
           />
         </div>
-        <p className={classes["about__description"]}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          molestiae et consectetur ipsum. Ipsa commodi modi, ipsum ad fuga est
-          nobis sed, pariatur vero accusantium veniam quibusdam possimus quo
-          laudantium!
-        </p>
+        <div className={classes["description"]}>
+          <h3 className={classes["description-title"]}>Lorem ipsum dolor</h3>
+          <p className={classes["description-text"]}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            molestiae et consectetur ipsum. Ipsa commodi modi, ipsum ad fuga est
+            nobis sed, pariatur vero accusantium veniam quibusdam possimus quo
+            laudantium!
+          </p>
+        </div>
         <div className={classes["about__fourth-image"]}>
           <img
             src="assets/img/guide2__accueil.jpg"
