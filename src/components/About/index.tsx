@@ -3,13 +3,14 @@ import classes from "./style.module.scss";
 
 const About: React.FC = () => {
   return (
-    <section className={classes.about}>
-      <motion.article
-        className={classes.about__article}
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
-      >
+    <motion.section
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      onAnimationStart={() => window.scrollTo(0, 0)}
+      className={classes.about}
+    >
+      <article className={classes.about__article}>
         <div className={classes["about__first-image"]}>
           <img
             src="assets/img/guide__accueil.jpg"
@@ -32,7 +33,7 @@ const About: React.FC = () => {
           nobis sed, pariatur vero accusantium veniam quibusdam possimus quo
           laudantium!
         </p>
-      </motion.article>
+      </article>
       <article className={classes.about__article}>
         <div className={classes["about__third-image"]}>
           <img
@@ -55,7 +56,7 @@ const About: React.FC = () => {
           />
         </div>
       </article>
-    </section>
+    </motion.section>
   );
 };
 

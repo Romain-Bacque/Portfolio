@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 
 const Home: React.FC = () => {
   return (
-    <section className={classes.home}>
-      <motion.div
-        className={classes.home__container}
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
-      >
+    <motion.section
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      onAnimationStart={() => window.scrollTo(0, 0)}
+      className={classes.home}
+    >
+      <div className={classes.home__container}>
         <div className={classes["home__presentation-container"]}>
           <h2 className={classes.home__name}>
             Romain<span className={classes.home__lastname}>Bacque</span>
@@ -27,8 +28,8 @@ const Home: React.FC = () => {
           </Button>
         </div>
         <Projects />
-      </motion.div>
-    </section>
+      </div>
+    </motion.section>
   );
 };
 

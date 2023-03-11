@@ -16,15 +16,15 @@
       color: white;
       border-color: white;
     }
+    &--alt {
+      color: $gray;
+      border-color: $gray;
+    }
     &.active-link {
       border-bottom: 2px solid;
       @include mediaQuery.media-min($large-screen) {
         border-bottom: 2px solid;
       }
-    }
-    &--alt {
-      color: $gray;
-      border-color: $gray;
     }
   }
   &__brand {
