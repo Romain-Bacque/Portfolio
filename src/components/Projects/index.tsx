@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
       className={classes.home}
     >
       <div className={classes.projects}>
-        <Slider />
+        <Slider animate={false} color="dark" height={40} />
       </div>
     </motion.section>
   );

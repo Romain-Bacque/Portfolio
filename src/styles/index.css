@@ -36,3 +36,8 @@ section {
 .popup__btn:hover {
   background-color: gray;
 }
+
+/* -- progress bar -- */
+.progress .progress-bar {
+  background-color: #F6DCBF;
+}

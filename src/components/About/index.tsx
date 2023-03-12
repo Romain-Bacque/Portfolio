@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ProgressBar } from "react-bootstrap";
 import classes from "./style.module.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const About: React.FC = () => {
   const [progress, setProgress] = useState({
@@ -33,29 +34,29 @@ const About: React.FC = () => {
       className={classes.about}
     >
       <article className={classes.about__article}>
-        <div>
+        <div className={classes.about__skills}>
           <div className={classes["description"]}>
-            <h3 className={classes["description-title"]}>Lorem ipsum dolor</h3>
+            <h3 className={classes["description-title"]}>Compétences</h3>
           </div>
           <div className={classes.progressBar}>
             <h4 className={classes.progressBar__title}>HTML</h4>
-            <ProgressBar variant="warning" now={progress.html} />
+            <ProgressBar now={progress.html} />
           </div>
           <div className={classes.progressBar}>
             <h4 className={classes.progressBar__title}>CSS</h4>
-            <ProgressBar variant="warning" now={progress.css} />
+            <ProgressBar now={progress.css} />
           </div>
           <div className={classes.progressBar}>
             <h4 className={classes.progressBar__title}>JavaScript</h4>
-            <ProgressBar variant="warning" now={progress.js} />
+            <ProgressBar now={progress.js} />
           </div>
           <div className={classes.progressBar}>
             <h4 className={classes.progressBar__title}>ReactJS</h4>
-            <ProgressBar variant="warning" now={progress.react} />
+            <ProgressBar now={progress.react} />
           </div>
           <div className={classes.progressBar}>
             <h4 className={classes.progressBar__title}>Express.js</h4>
-            <ProgressBar variant="warning" now={progress.express} />
+            <ProgressBar now={progress.express} />
           </div>
         </div>
       </article>

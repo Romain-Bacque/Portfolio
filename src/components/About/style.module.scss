@@ -14,9 +14,6 @@
       gap: 10rem;
       flex-direction: row;
     }
-    &:nth-child(1) {
-      align-items: stretch;
-    }
     &:nth-child(2) {
       clip-path: polygon(0 0, 100% 5%, 100% 94%, 0% 100%);
       position: relative;
@@ -31,12 +28,16 @@
       }
     }
   }
-  .progressBar {
-    margin-bottom: 2rem;
+  &__skills {
+    margin: auto;
     width: 800px;
     max-width: 90%;
+  }
+  .progressBar {
+    margin-bottom: 2rem; 
     &__title {
-     color: rgb(90, 90, 90);
+      color: gray;
+      font-weight: normal;
     }
   }
   &__first-image {
