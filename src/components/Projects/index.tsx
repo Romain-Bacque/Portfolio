@@ -5,7 +5,7 @@ import Slider from "../UI/Slider";
 
 const Projects: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [transition, setTransition] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
 
   const HandleItemClick = (slideNumber: number) => {
     setCurrentSlide(slideNumber);
@@ -14,10 +14,10 @@ const Projects: React.FC = () => {
   useEffect(() => {
     let timer: NodeJS.Timeout;
 
-    setTransition(false);
+    setIsToggled(false);
 
     timer = setTimeout(() => {
-      setTransition(true);
+      setIsToggled(true);
     }, 300);
 
     return () => {
@@ -35,10 +35,28 @@ const Projects: React.FC = () => {
     >
       <div
         className={`${classes.projects} ${
-          transition ? classes["projects--alt"] : ""
+          isToggled ? classes["projects--alt"] : ""
         }`}
       >
         <Slider onClick={HandleItemClick} animate={false} height={40} />
+        {isToggled && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className={classes["projects__description-container"]}
+          >
+            <div className="description">
+              <h3 className="description-title">Lorem ipsum dolor</h3>
+              <p className="description-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                molestiae et consectetur ipsum. Ipsa commodi modi, ipsum ad fuga
+                est nobis sed, pariatur vero accusantium veniam quibusdam
+                possimus quo laudantium!
+              </p>
+            </div>
+          </motion.div>
+        )}
       </div>
     </motion.section>
   );

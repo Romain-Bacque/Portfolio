@@ -20,9 +20,7 @@ const Home: React.FC = () => {
           </h2>
           <p className={classes.home__description}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            ducimus fugiat nobis rem dolorem harum officiis, aperiam corporis
-            deleniti nihil? Iusto, deserunt ipsa vel nostrum repellat nemo omnis
-            eum esse!
+            ducimus fugiat nobis rem dolorem harum officiis.
           </p>
           <Button className={classes["home__projects-button"]} variant="light">
             <NavLink className={classes["home__projects-link"]}  to="/projects">Mes projets</NavLink>

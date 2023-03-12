@@ -42,7 +42,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 10rem;
-      border-bottom: 3px solid rgb(73, 73, 73);
+      border-bottom: 3px solid $border-color;
     }
   }
   &__brand-text {

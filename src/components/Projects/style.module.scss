@@ -1,11 +1,13 @@
 .projects {
   background-color: white;
   height: 40vh;
-  width: fit-content;
+  width: 700px;
+  max-width: 90%;
   margin: auto;
+  padding: 2rem;
   border-radius: 10px;
   transition: height 0.3s ease-in-out;
   &--alt {
-    height: 80vh;
+    height: 75vh;
   }
 }
