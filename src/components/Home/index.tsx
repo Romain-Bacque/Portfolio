@@ -1,10 +1,18 @@
 import { Button } from "react-bootstrap";
-import Projects from "../Projects";
+import Projects from "../UI/Slider";
 import classes from "./style.module.scss";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
-    <div className={classes.home}>
+    <motion.section
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      onAnimationStart={() => window.scrollTo(0, 0)}
+      className={classes.home}
+    >
       <div className={classes.home__container}>
         <div className={classes["home__presentation-container"]}>
           <h2 className={classes.home__name}>
@@ -12,20 +20,15 @@ const Home: React.FC = () => {
           </h2>
           <p className={classes.home__description}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            ducimus fugiat nobis rem dolorem harum officiis, aperiam corporis
-            deleniti nihil? Iusto, deserunt ipsa vel nostrum repellat nemo omnis
-            eum esse!
+            ducimus fugiat nobis rem dolorem harum officiis.
           </p>
-          <Button
-            className={classes["home__project-button"]}
-            variant="light"
-          >
-            Mes projets
+          <Button className={classes["home__projects-button"]} variant="light">
+            <NavLink className={classes["home__projects-link"]}  to="/projects">Mes projets</NavLink>
           </Button>
         </div>
         <Projects />
       </div>
-    </div>
+    </motion.section>
   );
 };
 

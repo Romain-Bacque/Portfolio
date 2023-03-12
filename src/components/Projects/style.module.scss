@@ -1,5 +1,13 @@
 .projects {
-  margin: 3rem auto 0;
+  background-color: white;
+  height: 40vh;
   width: 700px;
-  height: 600px;
+  max-width: 90%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: height 0.3s ease-in-out;
+  &--alt {
+    height: 75vh;
+  }
 }
