@@ -9,6 +9,7 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
+    height: 90vh;
     padding: 5rem 2rem 10rem;
     @include mediaQuery.media-min($medium-screen) {
       gap: 10rem;

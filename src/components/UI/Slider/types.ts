@@ -1,6 +1,6 @@
 // interfaces
 export interface SliderProps {
   animate?: boolean;
-  color?: "dark" | "white";
   height?: number;
+  onClick?: (arg: number) => void;
 }

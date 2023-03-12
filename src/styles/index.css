@@ -37,6 +37,17 @@ section {
   background-color: gray;
 }
 
+/* -- carousel -- */
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
 /* -- progress bar -- */
 .progress .progress-bar {
   background-color: #F6DCBF;
