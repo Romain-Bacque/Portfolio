@@ -8,7 +8,7 @@ function Header() {
   const location = useLocation();
 
   const headerClass = `${classes.header} ${
-    location.pathname !== "/" && scrollActive ? classes["header--alt"] : ""
+   location.pathname !== "/" && scrollActive ? classes["header--alt"] : ""
   }`;
 
   useEffect(() => {

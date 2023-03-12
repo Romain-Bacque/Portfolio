@@ -4,14 +4,21 @@
 .about {
   &__article {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4rem;
+    align-items: center;
+    gap: 2rem;
     width: 100%;
-    padding: 8rem;
+    padding: 5rem 2rem 10rem;
+    @include mediaQuery.media-min($medium-screen) {
+      gap: 10rem;
+      flex-direction: row;
+    }
+    &:nth-child(1) {
+      align-items: stretch;
+    }
     &:nth-child(2) {
-      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 5%, 100% 94%, 0% 100%);
       position: relative;
       flex-direction: column;
       gap: 3rem;
@@ -22,6 +29,14 @@
           border-color: white;
         }
       }
+    }
+  }
+  .progressBar {
+    margin-bottom: 2rem;
+    width: 800px;
+    max-width: 90%;
+    &__title {
+     color: rgb(90, 90, 90);
     }
   }
   &__first-image {
@@ -36,7 +51,7 @@
     position: absolute;
     bottom: -30%;
     right: 0;
-    transform: translateX(50%);
+    transform: translateX(25%);
     border: 1px solid black;
     width: 150px;
     height: 250px;
@@ -45,6 +60,7 @@
     border: 1px solid black;
     width: 200px;
     height: 250px;
+    align-self: flex-start;
   }
   &__fourth-image {
     align-self: flex-end;
@@ -58,7 +74,7 @@
   width: 60%;
   &-title {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     &::after {
       position: absolute;
       bottom: -1rem;

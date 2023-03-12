@@ -1,6 +1,5 @@
 .projects {
-  width: 700px;
-  max-width: 90%;
-  height: 300px;
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

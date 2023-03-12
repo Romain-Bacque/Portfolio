@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../Home";
-import Projects from "../Projects";
+import Projects from "../UI/Slider";
 import { AnimatePresence } from "framer-motion";
 import About from "../About";
 import Contact from "../Contact";

@@ -9,10 +9,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   let customclasses = "";
 
-  if (location.pathname !== "/" && location.pathname !== "/contact") {
+  if (location.pathname !== "/" && location.pathname !== "/contact" && location.pathname !== "/projects") {
     customclasses = classes["main--alt1"];
-  } else if (location.pathname === "/contact") {
+  } else if (location.pathname === "/projects") {
     customclasses = classes["main--alt2"];
+  } else if (location.pathname === "/contact") {
+    customclasses = classes["main--alt3"];
   }
 
   return (

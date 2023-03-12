@@ -18,7 +18,7 @@ const NavBar: React.FC = () => {
 
   const getClassName = (path: string) => {
     const baseClasses = `${classes.navbar__link} ${
-      window.location.pathname !== "/" && classes["navbar__link--alt"]
+      (window.location.pathname !== "/" && window.location.pathname !== "/contact") && classes["navbar__link--alt"]
     }`;
 
     return `${baseClasses} ${

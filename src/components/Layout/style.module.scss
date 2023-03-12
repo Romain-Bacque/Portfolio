@@ -26,6 +26,14 @@
     }
   }
   &--alt2 {
+    background-color: rgb(58, 58, 58);
+    &:after {
+      background-color: white;
+      border-radius: 0;
+      height: 60%;
+    }
+  }
+  &--alt3 {
     &:after {
       border-radius: 0;
       height: 70%;
