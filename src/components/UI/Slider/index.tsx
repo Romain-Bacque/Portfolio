@@ -51,7 +51,7 @@ const Slider: React.FC<SliderProps> = ({ animate, height, onClick }) => {
 
 Slider.defaultProps = {
   animate: true,
-  height: 30,
+  height: 27,
 };
 
 export default Slider;

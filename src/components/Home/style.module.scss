@@ -3,10 +3,10 @@
 
 .home {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   &__container { 
-    mix-blend-mode: difference;
     color: rgb(255, 255, 255);
     padding: 2rem;
     margin: auto;
@@ -15,7 +15,7 @@
       position: relative;
       color: rgb(179, 179, 179);
       font-size: 7rem;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
       @include mediaQuery.media-min($small-screen) {
         margin-bottom: 10rem;
         font-size: 8rem;
@@ -40,12 +40,13 @@
     }
   }
   .home__presentation-container {
+    mix-blend-mode: difference;
     padding: 0 0 4rem;
     position: relative;
     .home__projects-button {
       position: absolute;
       bottom: 0;
-      right: 0;
+      right: 10%;
       color: gray;
       width: max-content;
       margin-left: 80%;

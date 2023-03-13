@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
-import Projects from "../UI/Slider";
 import classes from "./style.module.scss";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import Slider from "../UI/Slider";
 
 const Home: React.FC = () => {
   return (
@@ -23,10 +23,12 @@ const Home: React.FC = () => {
             ducimus fugiat nobis rem dolorem harum officiis.
           </p>
           <Button className={classes["home__projects-button"]} variant="light">
-            <NavLink className={classes["home__projects-link"]}  to="/projects">Mes projets</NavLink>
+            <NavLink className={classes["home__projects-link"]} to="/projects">
+              Mes projets
+            </NavLink>
           </Button>
         </div>
-        <Projects />
+        <Slider />
       </div>
     </motion.section>
   );

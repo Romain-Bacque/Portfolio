@@ -48,12 +48,14 @@ const Projects: React.FC = () => {
           >
             <div className="description">
               <h3 className="description-title">Lorem ipsum dolor</h3>
-              <p className="description-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                molestiae et consectetur ipsum. Ipsa commodi modi, ipsum ad fuga
-                est nobis sed, pariatur vero accusantium veniam quibusdam
-                possimus quo laudantium!
-              </p>
+              <div  className="description-container">
+                <p className="description-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  molestiae et consectetur ipsum. Ipsa commodi modi, ipsum ad
+                  fuga est nobis sed, pariatur vero accusantium veniam quibusdam
+                  possimus quo laudantium!
+                </p>
+              </div>
             </div>
           </motion.div>
         )}
