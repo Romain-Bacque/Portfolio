@@ -9,14 +9,14 @@
   &__title {
     position: relative;
     font-size: 8rem;
-    color: gray;
+    color: $gray;
     &:after {
       position: absolute;
       bottom: -1px;
       left: 0;
       content: "";
       width: 70%;
-      border-bottom: 4px solid gray;
+      border-bottom: 4px solid $gray;
     }
   }
   &__title-dot {

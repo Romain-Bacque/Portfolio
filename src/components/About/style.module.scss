@@ -15,7 +15,7 @@
       position: relative;
       flex-direction: column;
       gap: 3rem;
-      background-color: rgb(58, 58, 58);
+      background-color: $very-dark-gray;
       color: white;
     }
     &-container {
@@ -42,7 +42,7 @@
   .progressBar {
     margin-bottom: 2rem;
     &__title {
-      color: gray;
+      color: $gray;
       font-weight: normal;
     }
   }

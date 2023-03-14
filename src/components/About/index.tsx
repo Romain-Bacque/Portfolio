@@ -80,7 +80,7 @@ const About: React.FC = () => {
           >
             <img
               src="assets/img/guide2__accueil.jpg"
-              alt="photo du guide numéro 2"
+              alt="photo numéro 1"
               loading="lazy"
             />
           </div>
@@ -96,7 +96,7 @@ const About: React.FC = () => {
           <div className={classes["about__fourth-image"]}>
             <img
               src="assets/img/guide2__accueil.jpg"
-              alt="photo du guide numéro 2"
+              alt="photo numéro 2"
               loading="lazy"
             />
           </div>
@@ -115,12 +115,12 @@ const About: React.FC = () => {
               srcSet="assets/img/guide__accueil.jpg 1772w,
                           assets/img/guide__accueil__m.jpg 763w"
               sizes="100vw"
-              alt="photo du guide numéro 1"
+              alt="photo numéro 3"
             />
             <div className={classes["about__second-image"]}>
               <img
                 src="assets/img/guide2__accueil.jpg"
-                alt="photo du guide numéro 2"
+                alt="photo numéro 4"
                 loading="lazy"
               />
             </div>

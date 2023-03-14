@@ -7,14 +7,14 @@
   justify-content: center;
   align-items: center;
   &__container { 
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 2rem;
     margin: auto;
     width: 90%;
     height: 100%;
     .home__name {
       position: relative;
-      color: rgb(179, 179, 179);
+      color: $main-title-color;
       font-size: 6rem;
       margin-bottom: 2rem;
       @include mediaQuery.media-min($small-screen) {
@@ -48,7 +48,7 @@
       position: absolute;
       bottom: 0;
       right: 10%;
-      color: gray;
+      color: $gray;
       width: max-content;
       margin-left: 80%;
       font-size: 1.3rem;
