@@ -2,19 +2,15 @@
 @use "../../styles/vars" as *;
 
 .contact {
-  position: relative;
-  top: 0;
   color: white;
+  text-shadow: 0 0 2px black;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
   &__form {
     position: absolute;
-    top: 57%;
-    transform: translateY(-50%);
-    width: 600px;
+    top: 25%;
+    width: 500px;
     max-width: 90%;
     font-size: 1.7rem;
   }
@@ -24,8 +20,8 @@
   }
   &__button {
     width: 100%;
-    background-color: $dark-gray!important;
-    border-color: $dark-gray!important;
-    padding: 1rem!important;
+    background-color: $dark-gray !important;
+    border-color: $dark-gray !important;
+    padding: 1rem !important;
   }
 }

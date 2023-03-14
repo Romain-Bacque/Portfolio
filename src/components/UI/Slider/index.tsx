@@ -9,7 +9,6 @@ const Slider: React.FC<SliderProps> = ({ animate, height, onClick }) => {
     <Carousel
       onSelect={onClick}
       interval={animate ? 5000 : null}
-      style={{ height: `${height}vh` }}
       className={classes.slider}
     >
       <Carousel.Item>
@@ -51,7 +50,7 @@ const Slider: React.FC<SliderProps> = ({ animate, height, onClick }) => {
 
 Slider.defaultProps = {
   animate: true,
-  height: 27,
+  height: 35,
 };
 
 export default Slider;

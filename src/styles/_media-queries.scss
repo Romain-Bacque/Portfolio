@@ -1,8 +1,7 @@
-
 @mixin media-min($small-screen) {
-    @media screen and (min-width: $small-screen) {
-      & {
-        @content;
-      }
+  @media screen and (min-width: $small-screen) {
+    & {
+      @content;
     }
   }
+}

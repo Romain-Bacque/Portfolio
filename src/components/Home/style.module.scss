@@ -11,10 +11,11 @@
     padding: 2rem;
     margin: auto;
     width: 90%;
+    height: 100%;
     .home__name {
       position: relative;
       color: rgb(179, 179, 179);
-      font-size: 7rem;
+      font-size: 6rem;
       margin-bottom: 2rem;
       @include mediaQuery.media-min($small-screen) {
         margin-bottom: 10rem;

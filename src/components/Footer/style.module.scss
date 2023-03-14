@@ -12,10 +12,10 @@
   gap: 2rem;
   background-color: white;
   color: $dark-gray;
-  padding: .5rem 4rem;
+  padding: .5rem 1.6rem;
   border-top: 1px solid $light-gray;
   width: 100%;
-  height: 50px;
+  height: 70px;
   &__link {
     display: flex;
     list-style: none;
@@ -24,7 +24,7 @@
   }
   &__icon {
     color: $dark-gray;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   &__copy {
     margin: 0;

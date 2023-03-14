@@ -84,47 +84,45 @@ const Contact: React.FC = () => {
         onAnimationStart={() => window.scrollTo(0, 0)}
         className={classes.contact}
       >
-        <div className={classes.contact}>
-          <Form className={classes.contact__form} onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicText">
-              <Form.Label>Nom et Prénom</Form.Label>
-              <Form.Control
-                required
-                ref={nameRef}
-                type="text"
-                placeholder="Entrer le nom et le prénom"
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Adresse Email</Form.Label>
-              <Form.Control
-                required
-                ref={emailRef}
-                type="email"
-                placeholder="Entrer l'email"
-              />
-            </Form.Group>
-            <Form.Group controlId="formBasicMessage">
-              <Form.Label>Message</Form.Label>
-              <Form.Control
-                required
-                ref={messageRef}
-                as="textarea"
-                rows={3}
-                placeholder="Entrer le message"
-                className={classes.contact__textarea}
-              />
-            </Form.Group>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
-              <Button size="lg" className={classes.contact__button} type="submit">
-                Soumettre
-              </Button>
-            </motion.div>
-          </Form>
-        </div>
+        <Form className={classes.contact__form} onSubmit={handleSubmit}>
+          <Form.Group className="mb-3" controlId="formBasicText">
+            <Form.Label>Nom et Prénom</Form.Label>
+            <Form.Control
+              required
+              ref={nameRef}
+              type="text"
+              placeholder="Entrer le nom et le prénom"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Adresse Email</Form.Label>
+            <Form.Control
+              required
+              ref={emailRef}
+              type="email"
+              placeholder="Entrer l'email"
+            />
+          </Form.Group>
+          <Form.Group controlId="formBasicMessage">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              required
+              ref={messageRef}
+              as="textarea"
+              rows={3}
+              placeholder="Entrer le message"
+              className={classes.contact__textarea}
+            />
+          </Form.Group>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <Button size="lg" className={classes.contact__button} type="submit">
+              Soumettre
+            </Button>
+          </motion.div>
+        </Form>
       </motion.section>
     </>
   );
