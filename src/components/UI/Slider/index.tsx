@@ -4,7 +4,7 @@ import { SliderProps } from "./types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import image4 from "../../../assets/images/third-image.jpg";
 
-const Slider: React.FC<SliderProps> = ({ animate, height, onClick }) => {
+const Slider: React.FC<SliderProps> = ({ animate, onClick }) => {
   return (
     <Carousel
       onSelect={onClick}
@@ -50,7 +50,6 @@ const Slider: React.FC<SliderProps> = ({ animate, height, onClick }) => {
 
 Slider.defaultProps = {
   animate: true,
-  height: 35,
 };
 
 export default Slider;

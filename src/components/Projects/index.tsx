@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
           isToggled ? classes["projects--alt"] : ""
         }`}
       >
-        <Slider onClick={HandleItemClick} animate={false} height={40} />
+        <Slider onClick={HandleItemClick} animate={false} />
         {isToggled && (
           <motion.div
             initial={{ opacity: 0 }}

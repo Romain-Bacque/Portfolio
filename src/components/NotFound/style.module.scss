@@ -1,0 +1,41 @@
+@use "../../styles/vars" as *;
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__title {
+    position: relative;
+    font-size: 8rem;
+    color: gray;
+    &:after {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      content: "";
+      width: 70%;
+      border-bottom: 4px solid gray;
+    }
+  }
+  &__title-dot {
+    color: $border-color;
+  }
+  &__description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: rgb(146, 146, 146);
+  }
+  &__home-button {
+    color: white;
+    background-color: $gray;
+    border-color: $gray;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+  }
+  &__home-link {
+    color: inherit;
+    text-decoration: none;
+  }
+}
