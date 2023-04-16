@@ -2,7 +2,7 @@ import Carousel from "react-bootstrap/Carousel";
 import classes from "./style.module.scss";
 import { SliderProps } from "./types";
 import "bootstrap/dist/css/bootstrap.min.css";
-import image4 from "../../../assets/images/third-image.jpg";
+import image4 from "../../../assets/images/aircraft.jpg";
 
 const Slider: React.FC<SliderProps> = ({ animate, onClick }) => {
   return (

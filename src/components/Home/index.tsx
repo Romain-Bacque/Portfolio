@@ -19,8 +19,7 @@ const Home: React.FC = () => {
             Romain<span className={classes.home__lastname}>Bacque</span>
           </h2>
           <p className={classes.home__description}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            ducimus fugiat nobis rem dolorem harum officiis.
+            Jeune développeur passionné n'attendant qu'une chose, trouver mon coup de coeur, l'entreprise dans laquelle je pourrais m'épanouir et m'investir à 100%. 
           </p>
           <Button className={classes["home__projects-button"]} variant="light">
             <NavLink className={classes["home__projects-link"]} to="/projects">
