@@ -6,6 +6,9 @@ import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import imageAircraft from "../../assets/images/aircraft.jpg";
 import imageBoard from "../../assets/images/board.jpg";
+import imageCoding from "../../assets/images/code.jpg";
+import imageFishingWebsite from "../../assets/images/fishing_website.png";
+import imageDegree from "../../assets/images/degree.jpg";
 
 const reactObserverOptions = {
   threshold: 0,
@@ -122,20 +125,14 @@ const About: React.FC = () => {
             className={`${classes["about__image"]} ${classes["about__image--1"]}`}
           >
             <div>
-              <img
-                src="assets/img/guide__accueil.jpg"
-                srcSet="assets/img/guide__accueil.jpg 1772w,
-                          assets/img/guide__accueil__m.jpg 763w"
-                sizes="100vw"
-                alt="photo numéro 3"
-              />
+              <img src={imageCoding} alt="photo numéro 3" />
             </div>
             <div
               className={`${classes["about__image"]} ${classes["about__image--2"]}`}
             >
               <div>
                 <img
-                  src="assets/img/guide2__accueil.jpg"
+                  src={imageFishingWebsite}
                   alt="photo numéro 4"
                   loading="lazy"
                 />
@@ -173,14 +170,11 @@ const About: React.FC = () => {
           }`}
         >
           <div
-            className={`${classes["about__image"]} ${classes["about__image--1"]}`}
+            className={`${classes["about__image"]} ${classes["about__image--5"]}`}
           >
             <div>
               <img
-                src="assets/img/guide__accueil.jpg"
-                srcSet="assets/img/guide__accueil.jpg 1772w,
-                          assets/img/guide__accueil__m.jpg 763w"
-                sizes="100vw"
+                src={imageDegree}
                 alt="photo numéro 3"
               />
             </div>
@@ -193,7 +187,7 @@ const About: React.FC = () => {
               février 2023.
             </p>
             <p className="description-text">
-              Je l'ai réussi avec succès et obtenu les résultats en mars 2023.
+              J'ai obtenu les résultats en mars 2023 et l'ai réussi avec succès.
               Cette réussite m'a remplie de joie, car mon travail jusque-là n'a
               pas été vain, et j'ai pu enfin être récompensé.
             </p>
