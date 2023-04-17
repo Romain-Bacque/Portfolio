@@ -3,6 +3,7 @@ import classes from "./style.module.scss";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import Slider from "../UI/Slider";
+import myCv from "../../assets/images/Romain_Bacque.jpg";
 
 const Home: React.FC = () => {
   return (
@@ -19,15 +20,34 @@ const Home: React.FC = () => {
             Romain<span className={classes.home__lastname}>Bacque</span>
           </h2>
           <p className={classes.home__description}>
-            Développeur passionné n'attendant qu'une chose, trouver mon
-            coup de cœur, l'entreprise dans laquelle je pourrais m'épanouir et
+            Développeur passionné n'attendant qu'une chose, trouver mon coup de
+            cœur, l'entreprise dans laquelle je pourrais m'épanouir et
             m'investir à 100%.
           </p>
-          <Button className={classes["home__projects-button"]} variant="light">
-            <NavLink className={classes["home__projects-link"]} to="/projects">
-              Mes projets
-            </NavLink>
-          </Button>
+          <div className={classes["home__button-container"]}>
+            <Button
+              className={`${classes["home__button"]} ${classes["home__button--gray"]}`}
+              variant="light"
+            >
+              <NavLink className={classes["home__button-link"]} to="/projects">
+                Mes projets
+              </NavLink>
+            </Button>
+            <Button
+              className={`${classes["home__button"]} ${classes["home__button--white"]}`}
+              variant="outlined"
+            >
+              <a
+                className={classes["home__button-link"]}
+                download="CV - Romain Bacque.jpg"
+                href={myCv}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Mon CV
+              </a>
+            </Button>
+          </div>
         </div>
         <Slider size="sm" />
       </div>
