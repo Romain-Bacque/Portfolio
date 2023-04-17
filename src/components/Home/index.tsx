@@ -19,7 +19,9 @@ const Home: React.FC = () => {
             Romain<span className={classes.home__lastname}>Bacque</span>
           </h2>
           <p className={classes.home__description}>
-            Jeune développeur passionné n'attendant qu'une chose, trouver mon coup de coeur, l'entreprise dans laquelle je pourrais m'épanouir et m'investir à 100%. 
+            Développeur passionné n'attendant qu'une chose, trouver mon
+            coup de cœur, l'entreprise dans laquelle je pourrais m'épanouir et
+            m'investir à 100%.
           </p>
           <Button className={classes["home__projects-button"]} variant="light">
             <NavLink className={classes["home__projects-link"]} to="/projects">
@@ -27,7 +29,7 @@ const Home: React.FC = () => {
             </NavLink>
           </Button>
         </div>
-        <Slider />
+        <Slider size="sm" />
       </div>
     </motion.section>
   );

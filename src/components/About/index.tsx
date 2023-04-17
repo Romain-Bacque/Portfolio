@@ -85,7 +85,7 @@ const About: React.FC = () => {
             } ${inView1 ? classes.visible : ""}`}
           >
             <div>
-              <img src={imageAircraft} alt="photo numéro 1" loading="lazy" />
+              <img src={imageAircraft} alt="Photo d'un avion" loading="lazy" />
             </div>
           </div>
           <div className="description">
@@ -109,7 +109,7 @@ const About: React.FC = () => {
             className={`${classes["about__image"]} ${classes["about__image--4"]}`}
           >
             <div>
-              <img src={imageBoard} alt="photo numéro 2" loading="lazy" />
+              <img src={imageBoard} alt="Photo d'une carte électronique" loading="lazy" />
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ const About: React.FC = () => {
             className={`${classes["about__image"]} ${classes["about__image--1"]}`}
           >
             <div>
-              <img src={imageCoding} alt="photo numéro 3" />
+              <img src={imageCoding} alt="Image de code source" loading="lazy" />
             </div>
             <div
               className={`${classes["about__image"]} ${classes["about__image--2"]}`}
@@ -133,7 +133,7 @@ const About: React.FC = () => {
               <div>
                 <img
                   src={imageFishingWebsite}
-                  alt="photo numéro 4"
+                  alt="Image d'un site web de moniteur guide de pêche"
                   loading="lazy"
                 />
               </div>
@@ -175,7 +175,8 @@ const About: React.FC = () => {
             <div>
               <img
                 src={imageDegree}
-                alt="photo numéro 3"
+                alt="Photo du titre professionnel DWWM de Romain Bacque"
+                loading="lazy"
               />
             </div>
           </div>

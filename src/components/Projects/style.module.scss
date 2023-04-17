@@ -6,8 +6,9 @@
   margin: auto;
   padding: 2rem;
   border-radius: 10px;
+  overflow: auto;
   transition: height 0.3s ease-in-out;
   &--alt {
-    height: 460px;
+    height: 550px;
   }
 }

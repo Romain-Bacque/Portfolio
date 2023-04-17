@@ -1,7 +1,9 @@
 @use "./vars" as *;
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Open+Sans:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -10,7 +12,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
 }
 
 /* -- scroll bar -- */

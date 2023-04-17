@@ -46,6 +46,7 @@
     }
   }
   &__image {
+    max-width: 80%;
     div:first-child {
       overflow: hidden;
       border-radius: 10px;
@@ -66,7 +67,6 @@
   &__image--1 {
     position: relative;
     width: 400px;
-    max-width: 80%;
     height: 300px;
     margin-bottom: 125px;
   }

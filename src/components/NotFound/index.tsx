@@ -17,7 +17,7 @@ const NotFound: React.FC = () => {
           404<span className={classes["notFound__title-dot"]}>.</span>
         </h3>
         <p className={classes["notFound__description"]}>
-          Tu t'es trompé d'endroit !
+          Cette page n'existe pas !
         </p>
       </div>
       <Button size="lg" className={classes["notFound__home-button"]} variant="light">
