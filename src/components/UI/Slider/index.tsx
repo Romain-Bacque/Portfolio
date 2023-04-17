@@ -24,14 +24,6 @@ const Slider: React.FC<SliderProps> = ({ size, animate, onClick }) => {
     >
       <Carousel.Item>
         <img
-          id="1"
-          className="d-block w-100 h-100"
-          src={imageFishingWebsite}
-          alt="Image du site moniteur guide de pêche"
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
           id="2"
           className="d-block w-100 h-100"
           src={imageBeerWebsite}
@@ -52,6 +44,14 @@ const Slider: React.FC<SliderProps> = ({ size, animate, onClick }) => {
           className="d-block w-100 h-100"
           src={imagePastryBlog}
           alt="Image du blog de pâtisserie"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          id="1"
+          className="d-block w-100 h-100"
+          src={imageFishingWebsite}
+          alt="Image du site moniteur guide de pêche"
         />
       </Carousel.Item>
     </Carousel>
