@@ -18,7 +18,9 @@ const NavBar: React.FC = () => {
 
   const getClassName = (path: string) => {
     const baseClasses = `${classes.navbar__link} ${
-      (window.location.pathname !== "/" && window.location.pathname !== "/contact") && classes["navbar__link--alt"]
+      window.location.pathname !== "/" &&
+      window.location.pathname !== "/contact" &&
+      classes["navbar__link--alt"]
     }`;
 
     return `${baseClasses} ${
@@ -35,7 +37,9 @@ const NavBar: React.FC = () => {
     >
       <Container fluid>
         <Navbar.Brand className={classes.navbar__brand}>
-          <NavLink className={classes["navbar__brand-text"]} to="/">Mon Portfolio</NavLink>
+          <NavLink className={classes["navbar__brand-text"]} to="/">
+            Mon Portfol<span className={classes["i-letter"]}>i</span>o
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}

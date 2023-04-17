@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <p className={classes.footer__copy}>
-        © 2022 Mon Portfolio. Tous droits
+        © 2022 Portfolio De Romain. Tous droits
         réservés.
       </p>
       <ul className={classes.footer__link}>

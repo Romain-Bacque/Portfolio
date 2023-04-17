@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
   const HandleItemClick = (slideNumber: number) => {
     setCurrentSlide(slideNumber);
   };
-  console.log(currentSlide);
+  
   useEffect(() => {
     let timer: NodeJS.Timeout;
 

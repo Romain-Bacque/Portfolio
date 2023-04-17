@@ -49,4 +49,13 @@
     text-decoration: none;
     color: inherit;
   }
+  .i-letter {
+    color: $border-color;
+    position: relative;
+    &:before {
+      content: "ı";
+      position: absolute;
+      color: $dark-gray;
+    }
+  }
 }
