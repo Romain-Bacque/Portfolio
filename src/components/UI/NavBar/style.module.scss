@@ -2,6 +2,9 @@
 @use "../../../styles/vars" as *;
 
 .navbar {
+  &__offcanvas {
+    width: 70% !important;
+  }
   &__link {
     color: $gray;
     border-color: $gray;

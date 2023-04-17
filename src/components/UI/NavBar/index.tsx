@@ -49,6 +49,7 @@ const NavBar: React.FC = () => {
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+          className={classes.navbar__offcanvas}
         >
           <Offcanvas.Header color="white" closeButton>
             <Offcanvas.Title
