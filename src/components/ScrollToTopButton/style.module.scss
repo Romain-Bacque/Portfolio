@@ -1,0 +1,20 @@
+.scroll-up {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  z-index: 3;
+  cursor: pointer;
+  color: gray;
+  border-radius: 5px;
+  border: 2px solid gray;
+  background: white;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s;
+  &.active {
+    bottom: 10rem;
+  }
+  &:hover {
+    filter: brightness(90%);
+  }
+}

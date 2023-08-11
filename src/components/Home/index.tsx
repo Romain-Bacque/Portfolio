@@ -3,7 +3,7 @@ import classes from "./style.module.scss";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import Slider from "../UI/Slider";
-import myCv from "../../assets/images/CV.jpg";
+import myCv from "../../assets/images/CV.png";
 
 const Home: React.FC = () => {
   return (

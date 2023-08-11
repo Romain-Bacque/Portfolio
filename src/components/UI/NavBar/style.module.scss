@@ -6,6 +6,7 @@
     width: 70% !important;
   }
   &__link {
+    position: relative;
     color: $gray;
     border-color: $gray;
     font-size: 1.7rem;
@@ -15,19 +16,27 @@
     margin-left: 2rem;
     position: relative;
     transition: none;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      opacity: 0;
+      border-bottom: 2px solid $gray;
+    }
+    &.active-link {
+      &:after {
+        opacity: 1;
+        width: 60%;
+      }
+    }
     @include mediaQuery.media-min($large-screen) {
       color: white;
-      border-color: white;
     }
     &--alt {
       color: $gray;
-      border-color: $gray;
-    }
-    &.active-link {
-      border-bottom: 2px solid;
-      @include mediaQuery.media-min($large-screen) {
-        border-bottom: 2px solid;
-      }
     }
   }
   &__brand {
@@ -47,10 +56,13 @@
       width: 10rem;
       border-bottom: 3px solid $border-color;
     }
+    &:hover {
+      color: $dark-gray;
+    }
   }
   &__brand-text {
     text-decoration: none;
-    color: inherit;
+    color: $dark-gray;
   }
   .i-letter {
     color: $border-color;

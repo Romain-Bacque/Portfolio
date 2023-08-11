@@ -22,7 +22,10 @@ const About: React.FC = () => {
     html: 0,
     css: 0,
     js: 0,
+    ts: 0,
+    next: 0,
     react: 0,
+    node: 0,
     express: 0,
   });
 
@@ -30,7 +33,16 @@ const About: React.FC = () => {
     let timer: NodeJS.Timeout;
 
     timer = setTimeout(() => {
-      setProgress({ html: 80, css: 70, js: 80, react: 80, express: 70 });
+      setProgress({
+        html: 80,
+        css: 70,
+        js: 80,
+        ts: 60,
+        next: 70,
+        react: 80,
+        node: 50,
+        express: 70,
+      });
     }, 300);
 
     return () => {
@@ -64,8 +76,20 @@ const About: React.FC = () => {
             <ProgressBar now={progress.js} />
           </div>
           <div className={classes.progressBar}>
+            <h4 className={classes.progressBar__title}>TypeScript</h4>
+            <ProgressBar now={progress.ts} />
+          </div>
+          <div className={classes.progressBar}>
+            <h4 className={classes.progressBar__title}>Next.js</h4>
+            <ProgressBar now={progress.next} />
+          </div>
+          <div className={classes.progressBar}>
             <h4 className={classes.progressBar__title}>ReactJS</h4>
             <ProgressBar now={progress.react} />
+          </div>
+          <div className={classes.progressBar}>
+            <h4 className={classes.progressBar__title}>Node.js</h4>
+            <ProgressBar now={progress.node} />
           </div>
           <div className={classes.progressBar}>
             <h4 className={classes.progressBar__title}>Express.js</h4>
@@ -109,7 +133,11 @@ const About: React.FC = () => {
             className={`${classes["about__image"]} ${classes["about__image--4"]}`}
           >
             <div>
-              <img src={imageBoard} alt="Photo d'une carte électronique" loading="lazy" />
+              <img
+                src={imageBoard}
+                alt="Photo d'une carte électronique"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -125,7 +153,11 @@ const About: React.FC = () => {
             className={`${classes["about__image"]} ${classes["about__image--1"]}`}
           >
             <div>
-              <img src={imageCoding} alt="Image de code source" loading="lazy" />
+              <img
+                src={imageCoding}
+                alt="Image de code source"
+                loading="lazy"
+              />
             </div>
             <div
               className={`${classes["about__image"]} ${classes["about__image--2"]}`}
@@ -189,8 +221,7 @@ const About: React.FC = () => {
             </p>
             <p className="description-text">
               J'ai obtenu les résultats en mars 2023 et l'ai réussi avec succès.
-              Cette réussite m'a remplie de joie, car mon travail jusque-là n'a
-              pas été vain, et j'ai pu enfin être récompensé.
+              Ce titre est classé au niveau V (correspondant à un Bac +2).
             </p>
           </div>
         </div>

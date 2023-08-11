@@ -23,36 +23,44 @@ const Slider: React.FC<SliderProps> = ({ size, animate, onClick }) => {
       className={`${classes.slider} ${sliderSizeClass}`}
     >
       <Carousel.Item>
-        <img
-          id="2"
-          className="d-block w-100 h-100"
-          src={imageBeerWebsite}
-          alt="Image du site bières de ta région"
-        />
+        <a target="_blank" href="https://github.com/Romain-Bacque/apo-front">
+          <img
+            id="2"
+            className="d-block w-100 h-100"
+            src={imageBeerWebsite}
+            alt="Image du site bières de ta région"
+          />
+        </a>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          id="3"
-          className="d-block w-100 h-100"
-          src={imageCottageWebsite}
-          alt="Image du site location de gîtes"
-        />
+        <a target="_blank" href="https://github.com/Romain-Bacque/Site-gites">
+          <img
+            id="3"
+            className="d-block w-100 h-100"
+            src={imageCottageWebsite}
+            alt="Image du site location de gîtes"
+          />
+        </a>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          id="3"
-          className="d-block w-100 h-100"
-          src={imagePastryBlog}
-          alt="Image du blog de pâtisserie"
-        />
+        <a target="_blank" href="https://github.com/Romain-Bacque/PastryBlog">
+          <img
+            id="3"
+            className="d-block w-100 h-100"
+            src={imagePastryBlog}
+            alt="Image du blog de pâtisserie"
+          />
+        </a>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          id="1"
-          className="d-block w-100 h-100"
-          src={imageFishingWebsite}
-          alt="Image du site moniteur guide de pêche"
-        />
+        <a target="_blank" href="https://www.guidepecheariege.com/">
+          <img
+            id="1"
+            className="d-block w-100 h-100"
+            src={imageFishingWebsite}
+            alt="Image du site moniteur guide de pêche"
+          />
+        </a>
       </Carousel.Item>
     </Carousel>
   );

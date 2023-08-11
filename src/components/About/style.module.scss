@@ -59,8 +59,7 @@
       height: 100%;
       transition: 0.2s linear;
       &:hover {
-        width: 110%;
-        height: 110%;
+        transform: scale(1.08);
       }
     }
   }
@@ -90,8 +89,8 @@
     height: 200px;
   }
   &__image--5 {
-    width: 100%;
-    max-width: 500px;
-    height: 250px;
+    width: 500px;
+    max-width: 90%;
+    aspect-ratio: 2/1;
   }
 }

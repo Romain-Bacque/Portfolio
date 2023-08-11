@@ -6,7 +6,7 @@ import Slider from "../UI/Slider";
 const slideDetails = [
   {
     title: "Site bière de ta région",
-    text: "Projet en équipe réalisé en fin de formation au sein de l'école O'clock. C'est un site qui référence les microbrasseries grâce à la géolocalisation et met en avant leurs savoir-faire ou leurs expériences. Ce site pourra ensuite évoluer vers d'autres boissons comme le cidre ou les spiritueux, ou un système de prise de rdv pour des dégustations. Le site utilise diverses librairies telles que react-calendar pour la gestion du planning des événements.",
+    text: "Site réalisé en équipe au sein de l'école O'clock. Il référence les microbrasseries grâce à la géolocalisation et met en avant leurs savoir-faire ou leurs expériences. Ce site pourra ensuite évoluer vers d'autres boissons comme le cidre ou les spiritueux. Le site utilise diverses librairies telles que react-calendar pour la gestion du planning des événements.",
   },
   {
     title: "Site location de gîtes",
@@ -14,11 +14,11 @@ const slideDetails = [
   },
   {
     title: "Blog de pâtisserie",
-    text: "Projet perso que je suis en train de développer pour ma sœur, douée pour la pâtisserie, afin de mettre en avant son talent et son savoir-faire. J'utilise intégralement Next.js pour la partie front et back. L'utilisation de Next.js m'a paru judicieux car ce site à besoin d'être bien référencé",
+    text: "Projet perso que je suis en train de développer pour ma sœur, douée pour la pâtisserie, afin de mettre en avant son talent et son savoir-faire. J'utilise intégralement Next.js pour la partie front et back. L'utilisation de Next.js m'a paru judicieux car ce site à besoin d'être bien référencé.",
   },
   {
     title: "Site moniteur guide de pêche",
-    text: "C'est le premier site que j'ai réalisé. Je l'ai développé sans utiliser de framework, afin de me faire la main sur HTML, CSS et JavaScript. J'ai ensuite refactorisé l'ensemble du code vers la fin de ma formation chez O'clock pour le rendre plus lisible et facile à maintenir, ceci en le divisant en différents modules. Adresse du site : https://www.guidepecheariege.com/.",
+    text: "C'est le premier site que j'ai réalisé. Je l'ai développé sans utiliser de framework, afin de me faire la main sur HTML, CSS et JavaScript. J'ai ensuite refactorisé l'ensemble du code vers la fin de ma formation chez O'clock pour le rendre plus lisible et facile à maintenir, ceci en le divisant en différents modules.",
   },
 ];
 

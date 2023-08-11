@@ -21,7 +21,7 @@ section {
   left: 0;
   right: 0;
   width: 100%;
-  height: calc(100% - 175px);
+  min-height: calc(100% - 175px);
   margin-top: 100px;
   overflow-y: auto;
 }
@@ -63,7 +63,7 @@ section {
     overflow-y: auto;
   }
   &-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .description-container {
