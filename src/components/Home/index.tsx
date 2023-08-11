@@ -20,11 +20,10 @@ const Home: React.FC = () => {
             Romain<span className={classes.home__lastname}>Bacque</span>
           </h2>
           <p className={classes.home__description}>
-            J'ai effectué une formation intensive dans le domaine du
-            développement web afin de devenir un développeur compétent. Je suis
-            passionné par le code et toujours motivé à apprendre. Polyvalent,
-            mon aisance à assimiler de nouvelles connaissances me permet de
-            progresser rapidement dans mes projets.
+            Développeur web diplômé. Je suis passionné par le
+            code et toujours motivé à apprendre. Polyvalent, mon aisance à
+            assimiler de nouvelles connaissances me permet de progresser
+            rapidement dans mes projets.
           </p>
           <div className={classes["home__button-container"]}>
             <Button

@@ -16,16 +16,16 @@
   &__name {
     position: relative;
     color: $main-title-color;
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
     @include mediaQuery.media-min($small-screen) {
       margin-bottom: 10rem;
-      font-size: 8rem;
+      font-size: 7rem;
     }
   }
   &__description {
-    font-size: 1.5rem;
-    width: 80%;
+    font-size: 1.3rem;
+    width: 90%;
     margin-left: auto;
     @include mediaQuery.media-min($small-screen) {
       font-size: 1.8rem;

@@ -11,10 +11,10 @@
   height: 100vh;
   background-color: white;
   &:after {
+    content: "";
     position: absolute;
     top: 0;
     z-index: -1;
-    content: "";
     background-color: $very-dark-gray;
     border-radius: 64% 36% 0% 100% / 100% 0% 100% 0%;
     width: 100%;
