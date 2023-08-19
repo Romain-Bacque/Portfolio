@@ -4,11 +4,19 @@ import { ProgressBar } from "react-bootstrap";
 import classes from "./style.module.scss";
 import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import imageAircraft from "../../assets/images/aircraft.jpg";
-import imageBoard from "../../assets/images/board.jpg";
-import imageCoding from "../../assets/images/code.jpg";
-import imageFishingWebsite from "../../assets/images/fishing_website.png";
-import imageDegree from "../../assets/images/degree.jpg";
+// low quality Images
+import smallAircraftImage from "../../assets/images/aircraft-small.jpg";
+import smallBoardImage from "../../assets/images/board-small.jpg";
+import smallCodingImage from "../../assets/images/code-small.jpg";
+import smallFishingWebsiteImage from "../../assets/images/fishing_website-small.png";
+import smallDegreeImage from "../../assets/images/degree-small.jpg";
+// high quality Images
+import aircraftImage from "../../assets/images/aircraft.jpg";
+import boardImage from "../../assets/images/board.jpg";
+import codingImage from "../../assets/images/code.jpg";
+import fishingWebsiteImage from "../../assets/images/fishing_website.png";
+import degreeImage from "../../assets/images/degree.jpg";
+import CustomImage from "../UI/CustomImage";
 
 const reactObserverOptions = {
   threshold: 0,
@@ -108,9 +116,11 @@ const About: React.FC = () => {
               classes["about__image--3"]
             } ${inView1 ? classes.visible : ""}`}
           >
-            <div>
-              <img src={imageAircraft} alt="Photo d'un avion" loading="lazy" />
-            </div>
+            <CustomImage
+              smallImage={smallAircraftImage}
+              image={aircraftImage}
+              alt="Photo d'un avion"
+            />
           </div>
           <div className="description">
             <h3 className="description-title">Mon Parcours</h3>
@@ -132,13 +142,11 @@ const About: React.FC = () => {
           <div
             className={`${classes["about__image"]} ${classes["about__image--4"]}`}
           >
-            <div>
-              <img
-                src={imageBoard}
-                alt="Photo d'une carte électronique"
-                loading="lazy"
-              />
-            </div>
+            <CustomImage
+              smallImage={smallBoardImage}
+              image={boardImage}
+              alt="Photo d'une carte électronique"
+            />
           </div>
         </div>
       </article>
@@ -152,23 +160,19 @@ const About: React.FC = () => {
           <div
             className={`${classes["about__image"]} ${classes["about__image--1"]}`}
           >
-            <div>
-              <img
-                src={imageCoding}
-                alt="Image de code source"
-                loading="lazy"
-              />
-            </div>
+            <CustomImage
+              smallImage={smallCodingImage}
+              image={codingImage}
+              alt="Image de code source"
+            />
             <div
               className={`${classes["about__image"]} ${classes["about__image--2"]}`}
             >
-              <div>
-                <img
-                  src={imageFishingWebsite}
-                  alt="Image d'un site web de moniteur guide de pêche"
-                  loading="lazy"
-                />
-              </div>
+              <CustomImage
+                smallImage={smallFishingWebsiteImage}
+                image={fishingWebsiteImage}
+                alt="Image d'un site web de moniteur guide de pêche"
+              />
             </div>
           </div>
           <div className="description">
@@ -204,13 +208,11 @@ const About: React.FC = () => {
           <div
             className={`${classes["about__image"]} ${classes["about__image--5"]}`}
           >
-            <div>
-              <img
-                src={imageDegree}
-                alt="Photo du titre professionnel DWWM de Romain Bacque"
-                loading="lazy"
-              />
-            </div>
+            <CustomImage
+              smallImage={smallDegreeImage}
+              image={degreeImage}
+              alt="Photo du titre professionnel DWWM de Romain Bacque"
+            />
           </div>
           <div className="description">
             <h3 className="description-title">Mon diplôme</h3>
