@@ -50,7 +50,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
 
   if (href) {
     content = (
-      <a target="_blank" href={href}>
+      <a className={classes.link} target="_blank" href={href}>
         {content}
       </a>
     );
@@ -62,7 +62,6 @@ const CustomImage: React.FC<CustomImageProps> = ({
       className={`${classes["blur-load"]} ${isLoaded ? classes["loaded"] : ""}`}
       style={{
         backgroundImage: `url(${smallImage})`,
-
       }}
     >
       {content}
